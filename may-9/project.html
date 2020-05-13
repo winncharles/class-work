@@ -14,10 +14,17 @@
 
         }
 
+        h1 {
+            margin-bottom: 10px;
+        }
+        h1:hover{
+            color: blue;
+        }
+
         .bar {
             background-color: darkmagenta;
-
-
+            height: 30px;
+            font-size: 20px;
 
         }
 
@@ -28,24 +35,23 @@
 
         }
 
-        .side {
-            background-color: skyblue;
-          float: left;
-          width: 20%;
-          padding: 0px;
-          height: 500px;
-          padding-top: 0px;
-          padding-left: 0px;
-          border-right: 2px solid black;
+        .side{
+            background-color: gray;
+            float: left;
+            width: 20%;
+            padding: 0px;
+            padding-top: 0px;
+            padding-left: 0px;
+            border-right: 2px solid black;
+            color: black;
+            text-decoration: blue;
         }
 
         .content {
-            background-color: blueviolet;
+            background-color: khaki;
             float: left;
             border-right: 2px solid rgb(87, 10, 10);
             width: 80%;
-            border: 2px solid violet;
-            height: 500px;
 
         }
 
@@ -59,80 +65,112 @@
             background-color: black;
             color: blanchedalmond;
         }
-        .sidecontent{
+
+        .sidecontent {
             float: left;
             margin-right: 0px;
         }
-        .h{
-            color: teal;
+
+        .h {
+            color: darkblue;
             font-size: 30px;
         }
-        .p{
+
+        .p {
             color: black;
             font-size: 20px;
         }
+        .q:hover{
+            color: blue;
+            
+        }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
+
 <body>
     <div class="title">
         <h2>Softwave IT Solutions</h2>
     </div>
     <div class="bar">
-        <h3 class="q">Home</h3>
-        <h3 class="q">About</h3>
-        <h3 class="q">Services</h3>
-        <h3 class="q">New Batches</h3>
-        <h3 class="q">contact</h3>
+        <h3 class="q"><i class="fa fa-home" home></a></i> Home</h3>
+        <h3 class="q"><i class=" fa fa-info" info></i> About</h3>
+        <h3 class="q"><i class="fa fa-bell" bell></i> Services</h3>
+        <h3 class="q"><i class="fa fa-bandcamp" bandcamp></i> New Batches</h3>
+        <h3 class="q"><i class="fa fa-address-book" address-book></i> contact</h3>
     </div>
     <div class="sidecontent">
 
         <div class="side">
-            <h1>HTML</h1>
-            <h1>CSS</h1>
-            <h1>Java Script</h1>
-            <h1>jQuery</h1>
-            <h1>Bootstrap</h1>
-            <h1>NodeJS</h1>
-            <h1>ExpressJS</h1>
-            <h1>Mongo</h1>
-            <h1>Angular</h1>
-            <h1>React</h1>
+            <h1><a href="#html"></a> HTML</h1>
+            <h1<a href="#css"></a>>CSS</h1>
+            <h1><a href="#java script"></a>Java Script</h1>
+            <h1><a href="#jquery"></a>jQuery</h1>
+            <h1><a href="#bootstrap"></a>Bootstrap</h1>
+            <h1><a href="#node"></a>NodeJS</h1>
+            <h1><a href="#express"></a>ExpressJS</h1>
+            <h1><a href="#mongo"></a>Mongo</h1>
+            <h1><a href="#angular"></a>Angular</h1>
+            <h1><a href="#react"></a>React</h1>
         </div>
 
         <div class="content">
-            <h class="h">HTML</h>
-            <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, maxime nam possimus illo amet cumque
+            <h class="h" id="html">HTML</h>
+            <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, maxime nam possimus illo amet
+                cumque
                 blanditiis,
                 voluptas optio perspiciatis officia maiores magni fuga doloremque recusandae laudantium tempore veniam
                 dolorem
                 dolores.</p>
-            <h class="h">CSS</h>
-            <p class="p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi vitae ea odio ratione velit molestias
+            <h class="h"><a name="css">CSS</h>
+            <p class="p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi vitae ea odio ratione velit
+                molestias
                 assumenda, dolorum reprehenderit quasi. Eveniet, excepturi facilis. Laborum pariatur sint tempora
                 repellat
                 facilis iusto quisquam.</p>
-            <h class="h">JAVA SCRIPT</h>
-            <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nobis blanditiis accusamus porro nihil
+            <h class="h"></h>"java script">JAVA SCRIPT</h>
+            <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nobis blanditiis accusamus
+                porro nihil
                 numquam
                 asperiores inventore, fugiat quo, molestias similique est vitae deserunt itaque cumque atque rerum
                 repellendus.
                 Possimus!</p>
-            <h class="h">jQuery</h>
-            <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, hic ipsam nam eaque minima veritatis,
+            <h class="h" id="jquery">jQuery</h>
+            <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, hic ipsam nam eaque minima
+                veritatis,
                 vero
                 aut
                 ullam quas nulla necessitatibus non et alias in consectetur laboriosam nisi tempore labore?</p>
-            <h  class="h">Bootstrap</h>
-            <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt asperiores voluptate corporis eligendi
+            <h class="h" id="bootstrap">Bootstrap</h>
+            <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt asperiores voluptate corporis
+                eligendi
                 iure
                 soluta, voluptas libero expedita eaque vitae odio nemo consequuntur laboriosam animi? Maiores eveniet
                 corrupti
                 ex voluptatibus.</p>
-            <h  class="h">Node JS</h>
-            <p class="p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, aut cum! Quisquam esse praesentium
+            <h class="h" id="node">Node JS</h>
+            <p class="p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, aut cum! Quisquam esse
+                praesentium
                 officiis
                 mollitia excepturi a facere sequi laudantium quae corporis perspiciatis delectus sunt deserunt dolorem,
                 veritatis dolore.</p>
+            <h class="h" id="express">Express JS</h>
+            <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi necessitatibus id amet
+                placeat commodi at pariatur distinctio quo quidem modi eius ex molestiae iure explicabo quam, facere
+                unde repellat enim?</p>
+            <h class="h" id="mongo">Mongo</h>
+            <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi blanditiis ad, voluptas
+                itaque alias et, similique vero aperiam hic, nulla minus. Quia odit, obcaecati natus expedita voluptate
+                et facere earum.</p>
+            <h class="h" id="angular">Angular</h>
+            <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, id! Nostrum et obcaecati
+                labore natus accusantium maiores reprehenderit, modi saepe assumenda amet consequatur commodi. Deserunt
+                molestias neque veniam iusto officiis?</p>
+            <h class="h" id="react">React</h>
+            <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum maxime tempore ea, nobis, ipsa
+                exercitationem inventore natus alias blanditiis officiis deleniti minus quo officia earum modi magnam
+                perferendis. Deleniti, autem?</p>
         </div>
     </div>
 </body>
