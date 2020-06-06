@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design</title>
+    <style>
+        body {
+            font-family: Verdana;
+            font-size: 20px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #brand {
+            padding-left: 20px;
+            font-family: Verdana;
+            color: white;
+            font-weight: bold;
+            font-size: 26px;
+        }
+
+        #header {
+            background-color: #e62424;
+            width: 100%;
+            height: 45px;
+            padding-top: 10px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 10px;
+            color: #e62424;
+            text-shadow: 0px 0px 3px #355dcc;
+        }
+
+        #first-header {
+            width: 10%;
+            float: left;
+            padding-top: 0px;
+        }
+
+        #nav {
+            width: 100%;
+            height: 200px;
+            background-color: #dbd3d3;
+            text-align: center;
+        }
+
+        #nav ul {
+            list-style-type: none;
+        }
+
+        #nav ul li {
+            width: 100%;
+            height: 35px;
+            line-height: 35px;
+            text-align: left;
+
+            transition: background-color 0.2s, box-shadow 0.2s;
+        }
+
+        #nav ul li a:link {
+            background-color: #dbd3d3;
+            display: inline-block;
+            width: 100%;
+            height: 35px;
+            padding-left: 20px;
+            line-height: 35px;
+            text-decoration: none;
+            color: white;
+        }
+
+        #nav ul li a:hover {
+            background-color: #979a9e;
+            color: white;
+            text-decoration: underline;
+        }
+
+        #leftbox {
+            background-color: #ad7c7c;
+            width: 100%;
+            height: 400px;
+            padding-top: 10px;
+            text-align: left;
+            font-size: 10px;
+            color: #797575;
+            letter-spacing: 1px;
+        }
+
+        #leftbox ul {
+            list-style-type: none;
+        }
+
+        #leftbox ul li {
+            padding: 8px;
+            margin-top: 10px;
+        }
+
+        #leftbox ul li a {
+            /*background-color: #d63d3d; */
+            color: black;
+            text-decoration: none;
+            width: 100%;
+            display: inline-block;
+        }
+
+        #leftbox ul li:hover {
+            background-color: #777474;
+        }
+
+        #leftbox ul li a:hover {
+            color: #ffffff;
+        }
+
+        #pagecontent {
+            /* background-color: #b7c536; */
+            width: 100%;
+            height: 400px;
+            padding-top: 10px;
+            text-align: justify;
+            font-size: 10px;
+            color: #797575;
+            letter-spacing: 1px;
+        }
+
+        #contentbox {
+            background-color: #7e7777;
+            width: 45%;
+            height: 100px;
+            padding: 5px;
+            text-align: justify;
+            font-size: 12px;
+            color: #797575;
+            float: left;
+        }
+
+        #contentbox2 {
+            background-color: #7e7777;
+            width: 100%;
+            height: 100px;
+            padding: 5px;
+            text-align: justify;
+            font-size: 12px;
+            color: #797575;
+            clear: none;
+        }
+
+        #aside {
+            background-color: #ad7c7c;
+            width: 100%;
+            height: 400px;
+            padding-top: 10px;
+            text-align: left;
+            font-size: 10px;
+            color: #797575;
+            letter-spacing: 1px;
+        }
+
+        #aside ul {
+            list-style-type: none;
+        }
+
+        #aside ul li {
+            padding: 8px;
+            margin-top: 10px;
+        }
+
+        #aside ul li a {
+            /*background-color: #d63d3d; */
+            color: black;
+            text-decoration: none;
+            width: 100%;
+            display: inline-block;
+        }
+
+        #aside ul li:hover {
+            background-color: #777474;
+        }
+
+        #aside ul li a:hover {
+            color: #ffffff;
+        }
+
+        #footer {
+            background-color: #7cad87;
+            width: 100%;
+            height: 70px;
+        }
+
+
+        #pagecontent {
+            width: 100%;
+            height: 800px;
+        }
+
+        .contentbox {
+            width: 50%;
+            height: 230px;
+            padding: 10px;
+            text-align: justify;
+            font-size: 15px;
+            color: #797575;
+            float: left;
+        }
+
+        .nextline
+        {
+            width: 100%;
+            clear: left;
+        }
+
+
+        #aside {
+            width: 100%;
+            height: 700px;
+        }
+
+        #footer {
+            width: 100%;
+            height: 30px;
+            clear: left;
+        }
+
+
+
+        
+        /* styles for large devices*/
+        @media (min-width: 1000px) 
+        {
+            #leftbox, #pagecontent, #aside
+            {
+                float: left;
+                height: 600px;
+            }
+
+            #leftbox
+            {
+                width: 15%;
+            }
+
+            #pagecontent
+            {
+                width: 70%;
+            }
+
+            #aside
+            {
+                width: 15%;
+            }
+
+            #nav {
+                width: 100%;
+                height: 40px;
+                background-color: #dbd3d3;
+            }
+
+            #nav ul {
+                list-style-type: none;
+            }
+
+            #nav ul li {
+                width: 200px !important;
+                float: left;
+                height: 25px;
+                line-height: 25px;
+                text-align: center;
+                transition: background-color 0.2s, box-shadow 0.2s;
+            }
+
+            #nav ul li a:link {
+                background-color: #dbd3d3;
+                display: inline-block;
+                width: 100%;
+                height: 25px;
+                padding-left: 20px;
+                line-height: 25px;
+                text-decoration: none;
+                color: white;
+            }
+
+            #nav ul li a:hover {
+                background-color: #979a9e;
+                color: white;
+                text-decoration: underline;
+            }
+
+            .contentbox
+            {
+                width: 33%;
+                float: left;
+                clear: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <div id="first-header">
+            <div id="brand">REX</div>
+        </div>
+    </header>
+    <!--header ends-->
+
+    <nav id="nav">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">PRODUCTS</a></li>
+            <li><a href="#">SERVICE</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">CAREERS</a></li>
+        </ul>
+    </nav>
+
+    <!--leftbox starts-->
+    <section id="leftbox">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Careers</a></li>
+        </ul>
+    </section>
+    <!--leftbox ends-->
+
+
+    <!--pagecontent starts-->
+    <section id="pagecontent">
+        <section class="contentbox">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam vel, libero provident modi culpa sit quidem sint? Atque porro voluptatibus sunt repellendus, velit perferendis asperiores dolorem, assumenda, quidem itaque quasi tempore! Magni, culpa dolores quam iure sit quo necessitatibus enim?</section>
+
+        <section class="contentbox">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam vel, libero provident modi culpa sit quidem sint? Atque porro voluptatibus sunt repellendus, velit perferendis asperiores dolorem, assumenda, quidem itaque quasi tempore! Magni, culpa dolores quam iure sit quo necessitatibus enim?</section>
+
+        <section class="contentbox nextline">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam vel, libero provident modi culpa sit quidem sint? Atque porro voluptatibus sunt repellendus, velit perferendis asperiores dolorem, assumenda, quidem itaque quasi tempore! Magni, culpa dolores quam iure sit quo necessitatibus enim?</section>
+    </section>
+
+    <!--aside starts-->
+    <aside id="aside">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Careers</a></li>
+        </ul>
+    </aside>
+    <!--aside ends-->
+
+    <!--footer starts-->
+    <footer id="footer">
+        &copy; REX - All Rights Reserved 2020.
+    </footer>
+
+    <!--footer ends-->
+</body>
+
+</html>
