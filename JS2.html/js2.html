@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Relational</h1>
+    <script>
+        var a = 10;
+        var b = 4;
+        var c = a == b;
+        var d = a != b;
+        var e = a < b;
+        var f = a > b;
+        var g = a <= b;
+        var h = a >= b;
+        console.log(c);
+        console.log(d);
+        console.log(e);
+        console.log(f);
+        console.log(g);
+        console.log(h);
+    </script>
+    <h1>Logical Operators</h1>
+    <script>
+        var a = 10, b = 15, c = 20;
+        var d = a < b && c >= a;
+        var e = b > a && b > c;
+        var f = b > a || b > c;
+        var g = !(b < c);
+        console.log(d);
+        console.log(e);
+        console.log(f);
+        console.log(g);
+    </script>
+    <h>concatenation</h>
+    <script>//
+        var a = "hello";
+        var b = "world";
+        console.log(a + b);
+    </script>
+
+    <h>Interpolation</h>
+    <script>
+        var name = "john";
+
+        var age = 20;
+
+        console.log("hey" + name + "your age is" + age + '.');
+
+        console.log(`hey ${name},your age is ${age}.`);
+    </script>
+    <script>
+        var month = "jun";
+        var year = 2020;
+        var training = "Web Development";
+
+        console.log(month + year + training)
+    </script>
+
+    <h1>Control Statement</h1>
+    <h2>if</h2>>
+    <script>
+        var age =20;
+        if(age>17);
+        {
+        console.log("you are a major");
+        }
+        if(age<18)//*you can use else*//
+        {
+            console.log('you are a minor')
+        }
+    </script>
+    <script>
+        var hour=20;
+        if(hour<12)
+        {
+        console.log("am")
+        }
+        if(hour>12)
+        {
+            console.log("pm")
+        }
+    </script>
+    <script>
+        var hour=23;
+        if(hour<12)
+        {
+        console.log("good morning");
+        }
+        else if(hour>=12  && 'hour' < 16)
+        {
+        console.log("Good Afternoon ");
+        }
+        else(hour>=16)
+        {
+        console.log("GoodEvening");
+        }
+    </script>
+
+</body>
+
+</html>
