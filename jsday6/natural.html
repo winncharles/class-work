@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natural Numbers</title>
+    <style>
+        #main_nav
+        {
+            background:linear-gradient(45deg, blue, purple);
+            margin: 0px;
+            padding: 10px;
+            color: white;
+            border: 1px solid gray;
+            height: 10px;
+            width:250px;
+            margin-top: 4px;
+             
+
+        }
+        #title{
+            background: linear-gradient(25deg, darkgreen, darkblue);
+            color: white;
+            margin: 0px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="title">
+        <h1>Java Script| Natural Number <span id="firstno"></span> &
+        <span id="secondno"></span>
+        </h1>
+    </div>
+    <div id="main_nav"></div>
+    <script>
+        var x=10, y=20;
+        var res=''
+        document.getElementById("firstno").innerHTML=x
+
+        document.getElementById("secondno").innerHTML=y
+
+        while(x<=y)
+        {
+            if(x==y)
+            res = res + x;
+        else
+        {
+            res= res+ x+",";
+        }
+        x++
+        }
+
+        document.getElementById("main_nav").innerHTML=res
+
+    </script>
+</body>
+</html>

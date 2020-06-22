@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charles Winn</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        h1 {
+            color: white;
+            background: linear-gradient(45deg, yellow, black);
+
+        }
+
+        #charles {
+            background: linear-gradient(35deg, black, purple);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>First 20 Nartural Numbers</h1>
+    </div>
+    <div id="charles"></div>
+    <script>
+        results = "first 20 Nartual Numbers:<br>"
+        var a = 1;
+        while (a <= 20) {
+            if (a == 20) {
+                results = results + a
+            }
+            else {
+                results = results + a + ","
+
+            }
+            a++;
+        } 
+        document.getElementById("charles").innerHTML = results
+
+    </script>
+</body>
+
+</html>
