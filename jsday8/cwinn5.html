@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #doc {
+            background: linear-gradient(45deg, black, orange);
+            color: white;
+        }
+
+        #sorce {
+            background: linear-gradient(65deg, green, blue);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="doc">
+        <h1>Java Script| pattren | 05</h1>
+    </div>
+    <section id="sorce">
+
+    </section>
+    <script>
+        let res = "";
+        for (let p = 1; p <= 10; p++) {
+            for (let j = 1; j <= p; j++) {
+                res = res + "*";
+            }
+            res += "<br>";
+        }
+        document.getElementById("sorce").innerHTML=res;
+    </script>
+</body>
+
+</html>
