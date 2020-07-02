@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="header">
+        <h2>Charles | Java Script| Even numbers| Homework</h2>
+    </div>
+    <section id="content">
+
+    </section>
+    <script>
+        for (let x = 1; x <= 15; x ++) {
+            var res = ""
+            for (y = 1; y <= x; y++) {
+                res = res + x + "<br> "
+            }
+            console.log(res)
+        }
+        document.getElementById("content").innerHTML = res;
+    </script>
+</body>
+
+</html>

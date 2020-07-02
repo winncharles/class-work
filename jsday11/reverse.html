@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse Number</title>
+    <style>
+        body {
+            margin: 0px;
+            background: lightblue;
+        }
+
+        #header {
+            background: linear-gradient(45deg, orange, purple);
+            color: white;
+            margin: 0px;
+            padding: 10px;
+        }
+
+        #header,
+        h1 {
+            margin: 0px;
+        }
+
+        p,
+        input,
+        #inputline {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <h1>Java Script| Program to Reverse a Number </h1>
+    </div>
+
+    <div id="content">
+        <P id="textbox">Enter A Number
+            <input type="text" id="txt" size=6 autofocus onblur="reverseNumber(this.value)">
+            <span id="rev_number">_______</span>
+        </P>
+    </div>
+
+
+    <script>
+        function reverseNumber(num) {
+            let rev = 0;
+            while (num > 0) {
+                rem = num % 10;
+                rev = rev * 10 + rem;
+                num = Math.floor(num / 10);
+            }
+            //console.log(rev);
+            let result_region = document.getElementById("rev_number");
+
+
+            result_region.innerHTML = rev;
+
+            result_region.style.color = "orange";
+            result_region.style.fontweight = "bold";
+            result_region.style.textDecoration = "underline";
+            result_region.style.marginLeft = "100px";
+            result_region.style.backgroundColor = "purple";
+            result_region.style.padding = '10px 20px';
+            result_region.style.color = "white";
+            result_region.style.borderRadius = '20px 0px 20px 0px';
+            result_region.style.boxshadow = "0 0 10px black";
+
+        }
+    </script>
+</body>
+
+</html>

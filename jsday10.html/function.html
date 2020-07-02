@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd Numbers</title>
+    <style>
+        body {
+            margin: 0px;
+            background-color: black;
+
+        }
+
+        #header {
+            background: linear-gradient(45deg, black, limegreen);
+            color: white;
+            padding: 10px;
+        }
+
+        #header h2 {
+            margin: 0px;
+        }
+
+        p {
+            font-size: 20px;
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div Id="header">
+        <h2>Java Script | First "n" Odd Numbers<h2>
+    </div>
+
+    <div id=content>
+        <p>How Many Odd Numbers
+            <input type=text id="input_field" size=5 autofocus>
+            <button onclick="getOdds()">F i n d</button></p>
+    </div>
+    <div>
+        <!-- result section-->
+        <P id=odd style="color: Aquamarine">????</P>
+    </div>
+    <script>
+        function getOdds() {
+            //get the reference of the input field
+            let input_field = document.getElementById('input_field');
+
+            //get the value of input field
+            let num = input_field.value;
+            //alert(num)
+
+            let res = "";
+            let n = 1;
+            while (n < num * 2)
+             {
+                if(n==((num*2)-1)){
+                    res =`${res}${n}`
+                }
+                else{
+                        res = `${res}${n},`
+                }
+                n = n + 2;
+            }// End of while statment.
+            document.getElementById("odd").innerHTML = res;
+        }// end of function statment.
+    
+        /*
+        function getodd()
+        {
+        let res ="";
+        let count = 1;
+        let n = 1;
+
+        while= (count <= num)
+        {
+         res = `${res}${n},`;
+         count++;
+         n=n=2;   
+        }*/
+    
+    
+</script>
+</body>
+
+</html>

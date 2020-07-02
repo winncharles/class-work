@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="header">
+        <h1>Multiplcation Table of a Number</h1>
+    </div>
+    <div id=data_entry>
+        Multiplication of
+        <input type="text" id="input_number" size="5" autofocus>
+        <button onclick="printTable()">Show</button>
+    </div>
+    <div id="mtable_section"></div>
+    <script>
+        function printTable() {
+            let inputfield = document.getElementById("input_number")
+            let num = inputfield.value;
+            //alert(num)
+
+            let res = ""
+            for (let i = 1; i <= 10; i++) {
+                let p = num + i;
+                res = `${res}${num} x ${i}=
+${p}<br>`;
+            }
+            document.getElementById("mtable_section").innerHTML= res
+
+        }
+    </script>
+</body>
+
+</html>
