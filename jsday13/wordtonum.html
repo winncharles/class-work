@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number to word </title>
+    <style>
+        body {
+            margin: 0px;
+            background: lightcoral;
+        }
+
+        h1 {
+            background: linear-gradient(45deg, purple, red);
+            color: white;
+            margin: 0px;
+            padding: 5px;
+        }
+
+        #p {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        <p>Java Script| Convert A Single Digit Number to Word</p>
+    </h1>
+    <div id=content>
+        <p id=p>Enter a single Digit
+            <input type=text id="input_field" size=5 autofocus maxlength="1" onblur="convertToWord(this.value)">
+
+            <span id="result" style="color:blue;font-size:24px">________</span>
+        </p>
+    </div>
+    <script>
+        function convertToWord(n) {
+
+            n = parseInt(n);//to convert a string to number
+            //alert(n + " - " + typeof (n))
+            let word = '';
+
+            if (isNaN(n)) {
+                word = "Please provide a number as input"
+            }
+            else {
+                switch (n) {
+                    case 0: word =
+                        'zero';
+                        break;
+                    case 1: word =
+                        'one';
+                        break;
+                    case 2: word =
+                        'two';
+                        break;
+                    case 3: word =
+                        'three';
+                        break;
+                    case 4: word =
+                        'four';
+                        break;
+                    case 5: word =
+                        'five';
+                        break;
+                    case 6: word =
+                        'six';
+                        break;
+                    case 7: word =
+                        'seven';
+                        break;
+                    case 8: word =
+                        'eight';
+                        break;
+                    case 9: word =
+                        'nine';
+                        break;
+                    default: word = "not getting";
+                }
+            }
+            document.getElementById("result").innerHTML = word;
+            console.log(word)
+
+        }
+
+    </script>
+</body>
+
+</html>

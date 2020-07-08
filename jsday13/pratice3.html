@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd Numbers</title>
+    <style>
+        body {
+            margin: 0px;
+            background: lightslategray;
+        }
+
+        #header {
+            background: linear-gradient(45deg, purple, white);
+            margin: 0px;
+            padding: 10px 0px;
+            color: white;
+        }
+        #header, h2{
+            margin: 0px;
+        }
+        #input, #results {
+            width: 50%;
+            margin: 25px auto;
+            background: linear-gradient(45deg,black,lightgreen);
+            border-radius: 40px;
+            padding: 2px;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            box-shadow: 0 0 12px black;
+        }
+        button{
+            font-size: 20px;
+            border-radius: 20px;
+        }
+        input{
+            font-size: 20px;
+        }
+      
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <h2>Java Script| Odd Numbers Between X & Y</h2>
+    </div>
+    <div id="input">
+        <p>Odd Numbers Here <input type="text" id="box1" size="8" autofocus> and <input type="text" id="box2" size="8">
+        <button onclick="convert()">F i n d</button></p>
+    </div>
+    <div id="results">???</div>
+    <script>
+        function convert() {
+            let x = document.getElementById("box1").value;
+            let y = document.getElementById("box2").value;
+            x = parseInt(x);
+            y = parseInt(y);
+            
+            let res = "";
+            let rem = x%2;
+            if(rem ==0){
+                x=x+1
+            }
+            else{
+                x=x+2
+            }
+            while(x<y){
+                res= `${res}, ${x}`
+            }
+            x=x+2
+            document.getElementById("results").innerHTML = res
+            console.log("results")
+        }
+    </script>
+</body>
+
+</html>

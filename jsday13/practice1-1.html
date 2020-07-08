@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Even & Natural Numbers</title>
+    <style>
+        body{
+            margin: 0px;
+            background: aqua;
+        }
+        #header{
+            background: linear-gradient(45deg, blue,lightblue);
+            margin: 0px;
+            padding: 1px;
+            color: white;
+        }
+        #results{
+            border: 1px solid purple;
+            height: 50px;
+            width: 200px;
+            border-radius: 20px;
+            background: purple;
+            margin: 10px;
+            font-size: 20px;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id= "header">
+    <h2>Java Script| First 10 Natural Numbers</h2>
+    </div>
+
+    <div id= "results">
+        </div>
+    <script>
+     
+        let n=1;
+        res =''
+        while(n<=10){
+            if(n==10){
+                res=res+n
+            }
+            else{
+                res=res+n+" ,"
+            }
+            n++
+            document.getElementById("results").innerHTML = res
+        }
+    </script>
+    
+</body>
+</html>
